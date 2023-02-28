@@ -17,7 +17,8 @@ const Detail = () => {
 
   if (loading) return <Loading />;
   if (error) return `Error! ${error.message}`;
-  console.log("recon", data);
+
+  console.error("Response from server", data);
   return (
     <main className="flex h-screen mt-10">
       <div className="m-auto">

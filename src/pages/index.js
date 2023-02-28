@@ -20,7 +20,7 @@ export default function Home() {
   if (loading) return <Loading />;
   if (error) return `Error! ${error.message}`;
 
-  console.error("recon Response from server", data);
+  console.error("Response from server", data);
 
   const loadMore = () => {
     fetchMore({
